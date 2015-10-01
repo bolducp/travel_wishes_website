@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+        <title>Locations List</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>All Wish Locations</h1>
+                <p style="margin-left:50px">listed {{sorted_by}}</p>
+                <br>
+                <div class="sort_by">
+                    <form action ="{{ url_for('all_locations', locations=locations)}}" method = 'post'> Sort locations:
+                        <input type="radio" name="sort_by" value="alphabetically"> Alphabetically
+                        <input type="radio" name="sort_by" value="by_state"> By state
+                        <input type="submit" value="Sort" style="color: black">
+                    </form>
+                </div>
+            </div>
+        <br>
+            <div class="row">
+                <h3><a href="{{url_for('view_wishlist') }}">View A User's Wishlist</a></h3>
+            </div>
+        <br>
+            <div style="margin:10px">
+                {% for i in locations %}
+                    <div class="row">
+                        <p>{{i.name}}</p><p class="location_state_and_city">{{i.city}}, {{i.state}}</p>
+                    </div>
+
+                    {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

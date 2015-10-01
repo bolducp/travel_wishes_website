@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/styles.css">
+        <title>Travel Wishes</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row" style="margin:10px">
+                <h1>Welcome to Travel-Wishes!</h1>
+            </div>
+
+            <div class="row" style="text-align:center">
+                <div class="col-md-6">
+                    <h4><a href="{{url_for('all_locations') }}">Browse Locations</a></h4>
+                </div>
+                <div class="col-md-6">
+                    <h4><a href="{{url_for('view_wishlist') }}">View User Wish List</a></h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

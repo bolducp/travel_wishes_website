@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+        <title>Locations List</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Get User Wishlist:</h1>
+            </div>
+
+            <div class="row sort_by">
+                <form action="{{ url_for('view_wishlist')}}" method="post">
+                    <div>Enter username here to view list:</div>
+                    <input type="text" size="40" name="username" placeholder="username">
+                    <input type="submit" value="Get List" style="color:black">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+

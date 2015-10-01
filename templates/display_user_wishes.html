@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+        <title>Wishlist for: {{user.username}}</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Wishlist for {{user.fullname}} ({{user.username}})</h1>
+            </div>
+        <br>
+             <div style="margin:10px">
+                {% for i in user_wishes %}
+                    <div class="row">
+                        <p>{{i.location_name.name}}</p><p class="location_state_and_city">{{i.location_name.city}}, {{i.location_name.state}}</p>
+                    </div>
+
+                    {% endfor %}
+             </div>
+        </div>
+    </body>
+</html>
