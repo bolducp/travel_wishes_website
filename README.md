@@ -2,6 +2,11 @@
 
 This is an in-progress practice/experimental website project for the purposes of learning more about html, css, sqlalchemy, flask and other database and web development tools. The eventual idea of the website is to present a catalogue of "travel locations" and to allow users to add locations to their "wishlist" and then to also allow users to view each other's lists.
 
+## access
+currently hosted by Heroku here: http://travel-wishes-website.herokuapp.com/
+
+
+## usage
 In it's current state, the website has the following pages and abilities:
 
 1.) a home page ('/'):
