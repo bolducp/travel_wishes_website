@@ -1,0 +1,70 @@
+body    {
+  background-image: url(front.jpg);
+  font-family: 'Shadows Into Light', cursive;
+  text-shadow: black 0px 0px 2px;
+  font-size: 19px;
+  background-size: cover;
+}
+
+h1, h2  {
+    color: #E57E67;
+    font-family: 'Georgia', serif;
+    font-size:42px;
+    border-bottom: 2px solid #eee;
+}
+
+
+h3  {
+    text-align:center;
+    margin:15px;
+    font-size: 25px;
+    border-radius:55%;
+    background-color: #292928;
+}
+
+h4  {
+    color: #E57E67;
+    font-family: 'Shadows Into Light', cursive;
+    font-size:32px;
+}
+
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 5%;
+}
+
+
+p   {
+    color: #FFFBE0;
+    border-bottom: 1px dashed #E57E67;
+}
+
+.sort_by {
+    text-align: center;
+    color: #E57E67;
+    text-shadow:1px 1px black;
+    }
+
+.highlighted {
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+    display: inline;
+}
+
+.location_state_and_city {
+    text-align: right;
+}
+
+.sample_users {
+    font-size: 21px;
+    color:#FFE453;
+    text-shadow:1px 1px black;
+    font-family: 'Georgia', serif;
+}
+
+
+.flash          { background: #cee5F5; }

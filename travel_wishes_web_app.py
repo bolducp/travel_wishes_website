@@ -157,4 +157,4 @@ def get_wishes_for_user(username):
 # session.commit()
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)
